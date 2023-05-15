@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: #2D4059;" prefHeight="580" prefWidth="440" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SalesProcessController">
+   <children>
+      <Label layoutX="104.0" layoutY="15" text="Proceso de Compra" textFill="#E5E5E5">
+         <font>
+            <Font name="Gill Sans MT" size="30" />
+         </font>
+      </Label>
+
+      <Label layoutX="50" layoutY="84.0" text="ID del producto" textFill="#E5E5E5">
+         <font>
+            <Font name="Gill Sans MT" size="18" />
+         </font>
+      </Label>
+
+      <Label layoutX="50" layoutY="117.0" text="Cantidad del producto" textFill="#E5E5E5">
+         <font>
+            <Font name="Gill Sans MT" size="18" />
+         </font>
+      </Label>
+
+
+      <Label layoutX="50" layoutY="450" text="ID del cliente" textFill="#E5E5E5">
+         <font>
+            <Font name="Gill Sans MT" size="18" />
+         </font>
+      </Label>
+
+      <Label layoutX="50" layoutY="492" text="Dinero Recibido" textFill="#E5E5E5">
+         <font>
+            <Font name="Gill Sans MT" size="18" />
+         </font>
+      </Label>
+
+      <Button fx:id="btnAddToCart" layoutX="150" layoutY="160" mnemonicParsing="false" prefHeight="36.0" prefWidth="150" text="Agregar Producto" textFill="#000000">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </Button>
+
+      
+      <TableView fx:id="tableViewCart" layoutX="20.0" layoutY="210" prefHeight="200.0" prefWidth="400.0">
+         <columns>
+            <TableColumn fx:id="columnProductId" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="columnProductName" prefWidth="180.0" text="Nombre" />
+            <TableColumn fx:id="columnProductPrice" prefWidth="75.0" text="Precio" />
+            <TableColumn fx:id="columnProductAmount" prefWidth="70" text="Cantidad" />
+         </columns>
+      </TableView>
+
+      <Label fx:id="labelTotal" layoutX="150" layoutY="417" text="Precio total: " textFill="#E5E5E5">
+         <font>
+            <Font name="Gill Sans MT" size="18" />
+         </font>
+      </Label>
+
+      <TextField fx:id="Field_idProduct" layoutX="220" layoutY="80.0" prefWidth="180" />
+      <TextField fx:id="Field_amountProduct" layoutX="220" layoutY="115.0" prefWidth="180" />
+      <TextField fx:id="Field_idClient" layoutX="220" layoutY="450" prefWidth="180" />
+      <TextField fx:id="Field_money" layoutX="220" layoutY="490" prefWidth="180" />
+
+      <Button fx:id="btnConfirmPurchase" layoutX="80" layoutY="535" mnemonicParsing="false" prefHeight="36.0" prefWidth="120" text="Registrar" textFill="#000000">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </Button>
+
+
+      <Button fx:id="btnCancel" layoutX="250" layoutY="535" mnemonicParsing="false" prefHeight="36.0" prefWidth="120" text="Cancelar" textFill="#000000">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>

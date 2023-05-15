@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: #2D4059;" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="380" prefWidth="550" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
+   <children>
+      <Label layoutX="90" layoutY="27.0" prefHeight="21.0" prefWidth="500" text=" ABARROTES TÍZIMIN" textFill="#E5E5E5">
+         <font>
+            <Font name="Gill Sans MT" size="40" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40" fitWidth="40" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="resources/icons/store.png" />
+                </image>
+            </ImageView>
+        </graphic>
+      </Label>
+      
+      <Button fx:id="btnClientRegister" style="-fx-background-color: #DECDC3; -fx-cursor: hand;" layoutX="200" layoutY="100" mnemonicParsing="false" prefHeight="60.0" prefWidth="220" text="Registro de clientes" textFill="#000000">
+         <font>
+            <Font name="Gill Sans MT" size="16" />
+         </font>
+        <graphic>
+            <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="resources/icons/addUser.png" />
+                </image>
+            </ImageView>
+        </graphic>
+      </Button>
+      
+      <Button fx:id="btnProductRegister" style="-fx-background-color: #DECDC3; -fx-cursor: hand;" layoutX="200" layoutY="190" mnemonicParsing="false" prefHeight="60.0" prefWidth="220" text="Registro de productos" textFill="#000000">
+         <font>
+            <Font name="Gill Sans MT" size="16" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="resources/icons/addProduct.png" />
+                </image>
+            </ImageView>
+        </graphic>
+      </Button>
+
+      <Button fx:id="btnSalesProcess" style="-fx-background-color: #DECDC3; -fx-cursor: hand;" layoutX="200" layoutY="280" mnemonicParsing="false" prefHeight="60.0" prefWidth="220" text="Proceso de venta" textFill="#000000">
+         <font>
+            <Font name="Gill Sans MT" size="16" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="resources/icons/purchase.png" />
+                </image>
+            </ImageView>
+        </graphic>
+      </Button>
+   </children>
+</AnchorPane>
