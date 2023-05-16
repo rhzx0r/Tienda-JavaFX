@@ -18,9 +18,9 @@ public class Database { //* Conexión a la base de datos usando singleton */
   }
 
   public static synchronized Database getInstance() {  //* Metodo para obtener una instancia, no permite que se genere una nueva instancia. En el caso de existir una anterior devolvera la misma */
-    if (instance == null) {
+    if (instance == null) 
       instance = new Database();
-    }
+
     return instance;
   }
 

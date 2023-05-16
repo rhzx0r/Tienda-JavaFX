@@ -2,7 +2,6 @@ package controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import classes.AlertWindow;
 import classes.Client;
 import classes.Direction;

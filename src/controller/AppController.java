@@ -1,7 +1,6 @@
 package controller;
 
 import javafx.event.ActionEvent;
-// import classes.Client;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -32,9 +31,6 @@ public class AppController {  //* Patron de diseño mvc */
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(this.getClass().getResource("/view/ProductRegisterView.fxml"));
       Pane clientRegisterWindow = (Pane) loader.load();
-      // ClientRegisterController control = loader.getController();
-      // control.Inicializar(manejoDAO);
-
       Scene scene = new Scene(clientRegisterWindow);
       Stage secundaryStage = new Stage();
       secundaryStage.setScene(scene);
@@ -53,7 +49,6 @@ public class AppController {  //* Patron de diseño mvc */
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(this.getClass().getResource("/view/ClientRegisterView.fxml"));
       Pane clientRegisterWindow = (Pane) loader.load();
-
       Scene scene = new Scene(clientRegisterWindow);
       Stage secundaryStage = new Stage();
       secundaryStage.setScene(scene);

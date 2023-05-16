@@ -17,9 +17,9 @@ public class ClientDAO { //* Patron de diseño DAO */
 
   public void addClient(Client client) throws SQLException {
 
-    String sql = "INSERT INTO clients (firstName, lastName, street, number, colony, cp, city, state, phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
-    PreparedStatement statement = connection.prepareStatement(sql);
-    statement.setString(1, client.getFirstName());
+    String sql = "INSERT INTO clients (firstName, lastName, street, number, colony, cp, city, state, phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"; //* Construye un string sql */
+    PreparedStatement statement = connection.prepareStatement(sql); //*  Prepara una sentencia SQL para su ejecución utilizando un objeto PreparedStatement */
+    statement.setString(1, client.getFirstName()); //* Setea todos los campos de la base de datos con los correspondientes en el objeto cliente */
     statement.setString(2, client.getLastName());
     statement.setString(3, client.getDirection().getStreet());
     statement.setInt(4, client.getDirection().getNumber());
@@ -28,7 +28,7 @@ public class ClientDAO { //* Patron de diseño DAO */
     statement.setString(7, client.getDirection().getCity());
     statement.setString(8, client.getDirection().getState());
     statement.setString(9, client.getDirection().getPhone());
-    statement.executeUpdate();
+    statement.executeUpdate(); //* Ejecuta la query */
   }
 
   public String getNameById(int id) throws SQLException {

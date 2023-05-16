@@ -3,7 +3,6 @@ package controller;
 import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import classes.AlertWindow;
 import classes.Product;
 import dao.ProductDAO;
